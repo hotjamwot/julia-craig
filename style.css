@@ -15,6 +15,10 @@ body {
     background-color: #fefefe;
 }
 
+p, h1, h2, h3, a, li {
+    font-family: 'Newsreader', serif;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -30,7 +34,7 @@ header {
 nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 5px;
 }
 
 .nav-links {
@@ -75,6 +79,7 @@ nav {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-left: 55%;
 }
 
 .author-name {
@@ -84,36 +89,44 @@ nav {
     line-height: 1;
     position: absolute;
     bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -50%;
     white-space: nowrap;    
 }
 
 /* Content Sections */
-section {
+section:not(#hero) {
     margin-bottom: 80px;
-    max-width: 700px;
+    max-width: 900px;
+    padding: 80px 0;
 }
 
 /* Individual section alignments */
 #about {
-    margin-left: 10%;
+    margin-left: 0%;
+    margin-right: 30%;
+}
+
+#essays {
+    margin-left: 45%;
     margin-right: auto;
 }
 
-#selected-work {
-    margin-left: 50%;
+#art-criticism {
+    margin-left: 20%;
+    margin-right: auto;
 }
 
-#contact {
-    margin-left: 25%;
-    margin-right: auto;
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 0;
+    margin-left: 45%;
 }
 
 .content-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 80px 40px;
+    margin: 0 10%;
+    padding: 80px 0;
 }
 
 /* Typography */
